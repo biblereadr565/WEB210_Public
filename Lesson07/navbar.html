@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>NavBar</title>
+    <style>
+      ul {
+        text-align: left;
+        list-style: none;
+      }
+      ul li {
+        font: bold 12px/18px sans-serif;
+        display: inline-block;
+        position: relative;
+        padding: 15px 20px;
+        background: #000;
+        cursor: pointer;
+        color: #fff;
+      }
+      ul li:hover {
+        background: #555;
+        color: #fff;
+      }
+      ul li ul {
+        padding: 0;
+        position: absolute;
+        top: 48px;
+        left: -10000px;
+        width: 150px;
+      }
+      ul li ul li {
+        background: #555;
+        display: block;
+        color: #fff;
+      }
+      ul li ul li:hover { background: #666; }
+      ul li:hover ul {
+        display: block;
+        left :0px;
+      }
+    </style>
+  </head>
+  <nav>
+    <ul><li>Home</li>
+      <li>About Me</li>
+      <li>
+        Services
+        <ul>
+          <li>Web Design</li>
+          <li>Graphic Design</li>
+          <li>Logo Design</li>
+        </ul>
+      </li>
+      <li>
+        Work Experience
+        <ul>
+          <li>Relevant Work Experience</li>
+          <li>Other Work Experience</li>
+        </ul>
+      </li>
+      <li class="float-right">
+        Contact Me
+        <ul>
+          <li>Phone</li>
+          <li>Social Media</li>
+          <li>Contact Form</li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</html>
