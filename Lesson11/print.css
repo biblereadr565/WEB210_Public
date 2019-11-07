@@ -1,0 +1,68 @@
+html {
+  background-color: none;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin-bottom: 0;
+}
+body {
+  display: table;
+  page-break-inside: avoid;
+}
+main {
+  position: inherit;
+  width: calc(100% - .6in);
+  height: calc(100% - .6in);
+  display: block;
+}
+header h1,
+header h2,
+section p,
+footer p {
+   margin: 0;
+}
+
+h1 {
+  position: absolute;
+  top: 5;
+  left: 5;
+  text-align: center;
+  font-size: 30pt;
+}
+.small-title {
+  padding-top: 24px;
+  text-align: center;
+}
+.small-title::before {
+  content: "\21E9\0020"
+}
+img,.img, .profile {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+.nav {
+  visibility: hidden;
+}
+h2 {
+  display: inline-block;
+  float: left;
+  font-size: 18pt;
+  margin-right: 12px;
+}
+section {
+  display: inline-block;
+  font-size: 14pt;
+  word-break: wordwrap;
+  margin-top: 5px;
+}
+section:after {
+  content: "\"
+}
+p {
+  clear: both;
+}
+.footer {
+  visibility: hidden;
+}

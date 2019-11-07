@@ -1,0 +1,18 @@
+body{
+	margin: 0;
+}
+header{
+	background: rgba(118,118,118,1.00);
+	text-align: center;
+	padding: 25px 0 25px 0;
+	font: 600 small-caps Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 28px;
+}
+.container{
+	display: grid;
+	width: 100%;
+}
+img.profile{
+	width: 100%;
+	max-width: 100px;
+}

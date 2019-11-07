@@ -1,0 +1,112 @@
+body {
+  background-color: rgba(100,100,100,0.75);
+  color: black;
+  margin: 0;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  overflow: hidden;
+}
+
+header {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+section {
+  border-radius: 6px;
+  background-color: white;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 1em;
+  padding: 0 10px;
+}
+
+.footer {
+  position: static;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  color: white;
+  padding-bottom: 1em;
+}
+
+.title {
+  font-size: 2.6em;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.small-title {
+  text-align: center;
+  color: black;
+  font-size: 1.75em;
+  padding: 10px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: white;
+}
+
+.link {
+  text-decoration: none;
+  font-size: .8em;
+  color: blue;
+  text-transform: uppercase;
+}
+
+.link-active {
+  color: black;
+  background-color: yellow;
+}
+
+.img {
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.bigtitle {
+  padding: 0;
+}
+
+.profile {
+  width: 80%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+@media (min-width: 620px) {
+  main {
+    column-count: 2;
+    column-gap: 20px;
+  }
+
+  section {
+    break-inside: avoid;
+  }
+}
+
+@media (min-width: 960px) {
+  main {
+     column-count: 4;
+  }
+}
+
+@media (min-width: 620px) {
+  .link {
+    font-size: 1.4em;
+  }
+}
